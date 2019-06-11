@@ -1,5 +1,5 @@
 <a class="item">
-  Home
+  <%= link_to "Home", root_path, {:class => 'item'}  %>
 </a>
 <a class="item">
   Messages
@@ -8,7 +8,7 @@
   <div class="ui dropdown item">
     Language <i class="dropdown icon"></i>
     <div class="menu">
-      <a class="item">Log in</a>
+      <%= link_to "Log in", login_path, {:class => 'item'} %>
       <a class="item">Log Out</a>
       <a class="item">Sign in</a>
     </div>
