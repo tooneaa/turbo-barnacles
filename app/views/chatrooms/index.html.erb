@@ -8,19 +8,13 @@
       <div class="content">
         <!-- chat box goes here -->
         <div class="ui feed">
-          <h4 class="ui header">Followers Activity</h4>
-          <% @message.each do |message| %>
-          <div class="event">
-            <div class="content">
-              <div class="summary">
-                  <a> <%= message.user.username %></a> says:  <%= message.body %>
-              </div>
-            </div>
-          </div>
-          <% end %>
+        <h4 class="ui header">Followers Activity</h4>
+
+          <%= render @messages %>
+
         </div>
       </div>
-      <div class="extra content">
+      <div class="extra content"> --> %>
         <div class="ui fluid icon input">
           <input type="text" placeholder="Enter your message here....">
 
